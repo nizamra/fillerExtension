@@ -1,0 +1,25 @@
+# --- Security ---
+# NEVER commit your private key
+*.pem
+
+# --- Chrome/Brave Artifacts ---
+*.crx
+*.zip
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Node/Build (In case you add a build step later) ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+dist/
+build/

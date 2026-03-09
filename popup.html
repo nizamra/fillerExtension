@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>allFormsFiller</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-container">
+      <header class="popup-header">
+        <h1>allFormsFiller</h1>
+        <span class="subtitle">Profile-based form filler</span>
+      </header>
+
+      <section class="section">
+        <label for="profileSelect" class="section-label">Active profile</label>
+        <div class="profile-row">
+          <select id="profileSelect"></select>
+          <button id="addProfileBtn" class="btn secondary small">Add</button>
+          <button id="deleteProfileBtn" class="btn ghost small">Delete</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header-row">
+          <span class="section-label">Fields</span>
+          <button id="addFieldBtn" class="btn secondary small">Add field</button>
+        </div>
+        <div id="fieldsContainer" class="fields-container"></div>
+      </section>
+
+      <section class="section actions">
+        <button id="saveProfileBtn" class="btn primary full-width">
+          Save Profile
+        </button>
+        <button id="fillFormBtn" class="btn accent full-width">
+          Fill Form
+        </button>
+        <div id="status" class="status-text" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
+

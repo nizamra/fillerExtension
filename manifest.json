@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "allFormsFiller",
+  "description": "Fill web forms with preselected Work/Personal profiles on demand.",
+  "version": "1.0.0",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "allFormsFiller"
+  },
+  "icons": {
+    "16": "icons/formBuilder.png",
+    "48": "icons/formBuilder.png",
+    "128": "icons/formBuilder.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "utils.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
